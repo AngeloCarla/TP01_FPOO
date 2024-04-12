@@ -1,4 +1,9 @@
-int contador1=3, contador2=4;
-int R1 = ++contador1; 
-boolean R2 = contador1 < contador2;
-println("R2 es:", R2);
+int a=31, b=-1, x=3, y=2;
+int A = a+b-1;
+int B = x*y; 
+
+  if (A < B) {
+   println("a + b - 1 es menor que x * y");
+ } else {
+   println("a + b - 1 es mayor que x * y");
+}

@@ -1,10 +1,11 @@
-String nombre;
+int base, altura, perimetro, area;
 
 public void setup(){
-  nombre = "Lulu"; //ejemplo de nombre
-  saludo();
-}
+  base = 6;
+  altura = 4;
 
-public void saludo(){
-  println("Hola" , nombre);
+  perimetro = 2*(base*altura);
+  area = base*altura;
+  
+  println("El Perimetro es:", perimetro, "y el Area es:", area);
 }

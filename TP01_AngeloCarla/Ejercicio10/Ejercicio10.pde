@@ -1,9 +1,10 @@
-int i=22,j=3;
+int a=34, b=12, c=8;
 
-  boolean A = i > 4;     
-  boolean B = !(j <= 6); 
+boolean A = !(a + b == c); 
+  boolean B = c != 0;     
+  boolean C = b - c >= 19;   
   
-  boolean resultado = ! (A || B); 
+  boolean resultado = A || (B && C);
   
   println("El resultado es: " , resultado);
   

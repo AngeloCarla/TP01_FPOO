@@ -1,13 +1,9 @@
-int a=1, b=2, c=3, d=4, x=2, y=1;
+int A=4, B=5, C=1;
 
-float A = pow(b , 2) - 4 * a * c ;
-println("a =", A);
+float ejercicio1 = B * A - pow(B , 2) / 4 * C;
+float ejercicio2 = (A * B) / pow(3 , 2);
+float ejercicio3 = (((B + C) / 2 * A + 10) * 3 * B) - 6;
 
-float B = (3 * (pow(x , 4))) - (5 * (pow(x , 3))) + (x * 12) - 17; 
-println("b =", B);
-
-float C = (b + d) / (c + 4);
-println("c =", C);
-
-float D = ( pow(x , 2) + pow(y , 2) ) * pow(0.5);
-println("d =", d);
+println("A =", ejercicio1);
+println("B =", ejercicio2);
+println("C =", ejercicio3);

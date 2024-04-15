@@ -1,10 +1,26 @@
-String nombre;
+String textoConsola = "Escribe tu nombre: ";
+String nombre = "";
+String saludo = "Hola, ";
 
-public void setup(){
-  nombre = "Lulu"; //ejemplo de nombre
-  saludo();
+void setup() {
+  size(400, 400);
+  textSize(25);
+  textAlign(CENTER);
+  println(textoConsola);
 }
 
-public void saludo(){
-  println("Hola" , nombre);
+void draw() {
+  background(0);
+  text(saludo + nombre, width/2, height/2);
+}
+
+void keyPressed() {
+  if (key == '\n') {
+    saludo = "Hola, ";
+    println("Hola, " + nombre);
+    nombre = "";
+  } else {
+    nombre += key;
+    println(nombre);
+  }
 }
